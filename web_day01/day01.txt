@@ -1,0 +1,19 @@
+1. 192.168.1.33/nana.txt   IPv4주소  또는 localhost:8080/nana.txt 
+서버가 반드시 열려있어야하고 
+공인아이피라면 전세계 어디서든 공유가 가능함.
+
+Context 사이트 추가하기 
+ROOT 폴더가 있는 폴더에 새로운폴더생성 (ITWEB 이라고했음) 
+
+<Host name  라는 구절 아래에 
+<Context path="it" docBase="D:\JSP\apache-tomcat-9.0.35\webapps\ITWEB"
+	privileged="ture"/> 치고 저장 한후 서버를 다시열어야함 
+
+192.168.1.33/it/test.txt    치면 
+test.txt 메모장은 ITWEB에 들어있고  it 라는 폴더가 없지만 활성화됨 
+ 
+------------------------
+서블릿 프로그램 만들어보기 
+cmd 에서  자바 컴파일 할때   javac -cp D:\JSP\apache-tomcat-9.0.35\lib\servlet-api.jar 클래스파일.java 
+-cp는 classpath 명령어임  
+servlet-api.jar 가 들어있는 lib 폴더 경로명 입력후 \ 하고 servlet-api.jar 
