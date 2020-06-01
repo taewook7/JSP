@@ -1,0 +1,22 @@
+톰캣9 설치하기
+http://tomcat.apache.org/ 
+왼쪽배너에 톰캣9 클릭
+binary Distributions -  64bit/windows.zip 다운로드 
+
+압축을 풀고 
+bin 에서 startup 을 클릭할떄 화면이 안뜨면 설치환경이 제대로 안된것이다.
+cmd 창이 뜨고 
+인터넷주소에 http://localhost:8080/  을 쳐서 톰캣 그림이 나오면 설치가 제대로된것임
+
+환경변수에 가서 
+시스템변수-새로만들기-  변수이름은 JAVA_HOME 으로 하고 
+변수값에는 C:\jdk1.8.0_251 와 같이 자신의 컴퓨터에 jdk 위치를 지정해준다. 
+
+path를 찾아 편집->새로만들기 누른후
+%JAVA_HOME%\bin 추가 
+
+그후 시스템변수에 새로만들기 클릭 
+변수이름: CLASSPATH
+변수값: %JAVA_HOME%\lib
+
+
