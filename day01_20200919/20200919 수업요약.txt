@@ -1,0 +1,60 @@
+java App 실행 - JRE (자바실행환경) java runtime environment 
+제어판->프로그램 클릭 -> 프로그램 기능 클릭-> 자바설치안되있으면
+구글-java download 검색 -> 소프트웨어다운로드 클릭(https://java.com/ko/download/
+왼쪽배너에 모든Java다운로드 클릭 -> windows오프라인(64비트) 다운로드
+
+
+
+제어판\시스템 및 보안\시스템
+
+
+java App개발 - eclipse
+이클립스가 JDK를 알아서 설치하기 때문에 
+굳이 JDK 까지 설치는안해줘두됨 .
+구글에 eclipse 다운로드 검색- https://www.eclipse.org/downloads/
+또는
+eclipse-jee-2018-12-r-win32-x86_64 검색 
+https://www.eclipse.org/downloads/packages/release/2018-09/r/eclipse-ide-java-ee-developers
+여기로 들어감.
+
+
+SE(standard edition 기본버전)  용이 있고 
+EE (enterprise edition 기업버전)  용이 있는데
+ 웹프로그래밍 할려면 EE 선택해야함. 
+
+Eclipse 개발 설정 1) 캐릭터셋 설정 - utf-8  
+window-preferences -General-workspace-Text file encoding 을 UTF-8 로 변경
+그다음 Web 으로가서 CSS Files,HTML,JSP Files 3개 모두 UTF-8 로 맞춰준다.
+
+	2) tomcat 연결 설정 
+window-preferences -server-Runtime Environment-Add- Apache Tomcat v8.5
+경로는 bin폴더의 상위폴더를 선택해주면됨 
+
+JSP WEB 프로젝트 만들기 
+new - other - web- dynamic web project (jsp를 운영하게 만든다.)
+
+프로젝트안에 WebContent 에는 99.9% jspfile 이 들어간다.
+jsp 파일에서 작성후 실행을 누르면 내장용 브라우저가 실행된다.
+다른브라우저로 열게 하려면 window web브라우저에서 바꿔준다. 
+
+JSP서버 = *.jsp 인 파일을 처리하는 웹서버 프로그램을
+html=브라우저에서 처리됨 
+java =서버에서 처리됨  .
+jsp는 이둘다 처리가 가능한 동적인 처리를 한다.
+
+server.xml 에는 톰캣의 포트번호를 설정할수있다.63라인
+브라우저는 1서버요청 기능 2 HTML해석기능(명령문) 3화면출력 기능이 있다.
+
+
+
+JSP 실행    - Tomcat
+구글에 tomcat download 검색  8버전 클릭 https://tomcat.apache.org/download-80.cgi
+왼쪽배너 Tomcat8 클릭후 64bit 설치.
+
+DB 관리  - MySQL 
+D드라이브에 설치파일 3개 넣어놓고 workspace 폴더를 만들어준다.
+
+
+
+
+
